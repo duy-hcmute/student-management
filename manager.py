@@ -1,3 +1,16 @@
+    def find_student(self, student_id):
+        for s in self.students:
+            if s.student_id == student_id:
+                return s
+        return None
+
+    def delete_student(self, student_id):
+        student = self.find_student(student_id)
+        if student:
+            self.students.remove(student)
+            self.save_to_file()
+            return True
+        return False
 import csv
 import os
 from student import Student
