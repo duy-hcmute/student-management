@@ -17,3 +17,5 @@ This project is created for learning GitHub and basic Python OOP.
 
 ```bash
 python student.py
+## Data storage
+Student data is stored in a CSV file.
